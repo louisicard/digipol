@@ -140,7 +140,5 @@ let Digipol = {
 document.addEventListener("DOMContentLoaded", function (event) {
     let fp = Digipol.getFingerprint();
     let browsingData = Digipol.getBrowsingData();
-    Digipol.sendServiceRequest('/track', {fingerprint: fp, browsingData: browsingData}, function(data) {
-        console.log(data);
-    });
+    Digipol.sendServiceRequest('/track', {fingerprint: fp, browsingData: browsingData});
 });
