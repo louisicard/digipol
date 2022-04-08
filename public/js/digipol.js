@@ -132,7 +132,7 @@ let Digipol = {
                 }
             }
         };
-        xhr.open('POST', 'http://track.digipol.adimeo.eu' + path);
+        xhr.open('POST', '//track.digipol.adimeo.eu' + path);
         xhr.send(JSON.stringify(data));
     }
 };
